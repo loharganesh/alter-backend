@@ -19,7 +19,7 @@ app.use(
     morgan(':method :url :status :res[content-length] - :response-time ms')
 );
 
-app.use(cors({ origin: ['http://localhost:3000'] }));
+app.use(cors({ origin: ['*'] }));
 
 // Default Route
 app.post('/', upload.array('files'), async (req, res) => {
