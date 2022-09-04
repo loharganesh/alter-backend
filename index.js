@@ -21,6 +21,9 @@ app.use(
 
 app.use(cors({ origin: ['*'] }));
 
+app.get('/', (req, res) => {
+    console.log('Get Request Recieved');
+});
 // Default Route
 app.post('/', upload.array('files'), async (req, res) => {
     try {
@@ -44,5 +47,5 @@ app.post('/', upload.array('files'), async (req, res) => {
 });
 
 app.listen(8080, () => {
-    console.log('Server Started');
+    console.log('Server Started on port 8080');
 });
