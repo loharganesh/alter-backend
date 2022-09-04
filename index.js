@@ -46,6 +46,6 @@ app.post('/', upload.array('files'), async (req, res) => {
     }
 });
 
-app.listen(8080, () => {
-    console.log('Server Started on port 8080');
+app.listen(443, () => {
+    console.log('Server Started on port 443');
 });
