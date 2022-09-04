@@ -22,7 +22,7 @@ app.use(
 app.use(cors({ origin: ['*'] }));
 
 app.get('/', (req, res) => {
-    console.log('Get Request Recieved');
+    res.status(200).send('Ok');
 });
 // Default Route
 app.post('/', upload.array('files'), async (req, res) => {
@@ -46,6 +46,6 @@ app.post('/', upload.array('files'), async (req, res) => {
     }
 });
 
-app.listen(443, () => {
-    console.log('Server Started on port 443');
+app.listen(8080, () => {
+    console.log('Server Started on port 8080');
 });
