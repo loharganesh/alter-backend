@@ -21,6 +21,7 @@ app.use(
 
 app.use(cors({ origin: ['http://localhost:3000'] }));
 
+// Default Route
 app.post('/', upload.array('files'), async (req, res) => {
     try {
         const { files } = req;
