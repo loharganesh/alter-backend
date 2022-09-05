@@ -19,7 +19,13 @@ app.use(
     morgan(':method :url :status :res[content-length] - :response-time ms')
 );
 
-app.use(cors({ origin: ['*'] }));
+app.use(
+    cors({
+        origin: [
+            'https://63161951ffd9447c03961d4e--resplendent-cannoli-2f15b4.netlify.app/',
+        ],
+    })
+);
 
 app.get('/', (req, res) => {
     res.status(200).send('Ok');
