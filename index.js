@@ -21,7 +21,7 @@ app.use(
 
 app.use(
     cors({
-        origin: ['https://resplendent-cannoli-2f15b4.netlify.app/'],
+        origin: 'https://alterimage.netlify.app/',
     })
 );
 
