@@ -21,7 +21,7 @@ app.use(
 
 app.use(
     cors({
-        origin: 'https://alterimage.netlify.app/',
+        origin: 'https://alterimage.netlify.app',
     })
 );
 
