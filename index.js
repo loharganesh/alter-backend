@@ -21,8 +21,7 @@ app.use(
 
 app.use(
     cors({
-        origin: 'https://63161951ffd9447c03961d4e--resplendent-cannoli-2f15b4.netlify.app/',
-        credentials: true,
+        origin: ['resplendent-cannoli-2f15b4.netlify.app'],
     })
 );
 
